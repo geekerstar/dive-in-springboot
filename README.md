@@ -103,5 +103,24 @@ http://blog.ippon.tech/spring-5-webflux-performance-tests/
 - 指标：内建Metrics、自定义Metrics
 
 
+## Spring Framework 手动装配
+### Spring模式注解装配
+- 定义：一种用于声明在应用中扮演着"组件"角色的注解
+- 举例：@Component、@Service、@Configuration等
+- 装配：`<context:component-scan>` 或 @ComponentScan
 
+### Spring @Enable模块装配
+- 定义：具备相同领域的功能组件集合，组合所形成一个独立的单元
+- 举例：@EnableWebMvc、@EnableAutoConfiguration
+- 实现方式：注解方式、编程方式
+
+### spring 条件装配
+- 定义：Bean装配的前置判断
+- 举例：@Profile、@Conditional
+- 实现：注解方式、编程方式
+
+## Springboot 自动装配
+- 定义：基于约定大于配置的原则，实现Spring组件自动装配的目的
+- 装配：模式注解、@Enable模块、条件装配、工厂加载机制
+- 实现：激活自动装配、实现自动装配、配置自动装配实现
 

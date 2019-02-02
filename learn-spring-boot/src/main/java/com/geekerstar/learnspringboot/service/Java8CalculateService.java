@@ -13,6 +13,8 @@ import java.util.stream.Stream;
 public class Java8CalculateService implements CalculateService {
     @Override
     public Integer sum(Integer... values) {
+        System.out.println("Java8 lambda循环实现");
+
         int sum = Stream.of(values).reduce(0,Integer::sum);
         return sum;
     }
