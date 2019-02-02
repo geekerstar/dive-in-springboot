@@ -8,6 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * asyncSupported = true
+ */
+
 @WebServlet(urlPatterns = "/my",asyncSupported = true)
 public class MyServlet extends HttpServlet {
     @Override
@@ -23,6 +27,5 @@ public class MyServlet extends HttpServlet {
                 e.printStackTrace();
             }
         });
-
     }
 }
